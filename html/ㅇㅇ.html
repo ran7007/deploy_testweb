@@ -1,0 +1,146 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>미니실습</title>
+<link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+<h1>미니실습</h1>
+<div class="nav">
+    <div class="logo">
+        <img src="" alt="">
+    </div>
+    <div class="nav_but">
+        <a href="../index.html">main</a>
+    </div>
+</div>
+
+<h1>
+    <input type="time">
+    <input type="datetime-local">
+</h1>
+
+<div class="h2">
+<fieldset>
+    <legend>문의정보</legend>
+    <p>문의하실 내용을 적어주세요</p>
+    <input type="text" id="문의">
+</fieldset>
+
+<fieldset>
+    <legend>기타정보</legend>
+    <p>기타 내용을 적어주세요</p>
+    <input type="text" id="기타">
+</fieldset>
+</div>
+
+<h3>문의 리스트 정리 표</h3> 
+<table border="1">
+<colgroup>
+<col style="width: 100px;">
+<col style="width: 300px;">
+<col style="width: 300px;">
+</colgroup>
+<tr class="header-row">
+    <td>순서</td>
+    <td>문의내용</td>
+    <td>기타내용</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>이 페이지는 무엇인가요?</td>
+    <td>해당없음</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>오늘은 무엇을 먹을까요?</td>
+    <td>고기는 비추</td>
+</tr>
+</table>
+</from>
+</h1>
+</body>
+</html>
+
+
+
+
+<!-- 
+/* 네비게이션 */
+.nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.nav_but a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.inquiry-box, .additional-box {
+    width: 300px; /* 너비 설정 */
+    height: auto; /* 높이는 자동 조절 */
+    border: 2px solid #ccc; /* 테두리 */
+    padding: 20px; /* 내부 여백 */
+    margin-bottom: 100px; /* 박스 간 간격 */
+    border-radius: 10px; /* 모서리 둥글게 */
+}
+
+input[type="text"] {
+    width: 90%; /* 텍스트 입력 필드의 너비를 부모 요소에 맞춤 */
+    padding: 10px; /* 내부 여백 */
+    margin-top: 10px; /* 위쪽 여백 */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* 입력 필드 모서리 둥글게 */
+}
+
+h1 input {
+    margin-right: 10px; /* 두 입력 필드 간 간격 */
+}
+
+/* 전체적인 박스 크기 조정 */
+.h2 {
+    max-width: 700px;
+}
+
+/* 본문꾸미기 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+.h2 { font-size: 18px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.header-row{
+    background-color: rgba(184, 184, 184, 0.952);
+}
+
+table {
+caption-side: solid;
+border: 1px solid blcxk;
+border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 이미지꾸미기 */
+body {
+    background-image: linear-gradient(rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.8)), 
+                      url('이미지2.jpg');
+    background-size: cover; /* 배경 이미지를 화면에 꽉 차게 */
+    background-position: center; /* 이미지를 가운데 정렬 */
+    background-repeat: no-repeat; /* 배경 이미지 반복 제거 */
+    height: 100vh; /* 높이를 100% 화면에 맞춤 */
+    margin: 0;
+}
+
+/* 예시로 적용할 박스 */
+
+ -->
